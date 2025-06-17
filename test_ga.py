@@ -1,27 +1,32 @@
 # test_ga.py
 
-import argparse
-from src.parse_tsp import load_custom_tsp, compute_dist_matrix
-from src.ga_tsp import run_ga
+from parser import read_graph
+from ga_coloring import ga_coloring, fitness
+import time
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--pop_size', type=int, default=50)
-parser.add_argument('--generations', type=int, default=100)
-parser.add_argument('--mutation_rate', type=float, default=0.1)
-args = parser.parse_args()
+# 1) Grafı oku
+G = read_graph("gc_50_9.txt")
 
-coords = load_custom_tsp("instances/tsp_100_1")
-D = compute_dist_matrix(coords)
+# 2) GA’yı çalıştır ve süreyi ölç
+start = time.time()
+best = ga_coloring(G)
+dur = time.time() - start
 
-best, length = run_ga(
-    D,
-    pop_size=args.pop_size,
-    generations=args.generations,
-    tourn_size=5,
-    p_crossover=0.8,
-    p_mutation=args.mutation_rate,
-    elite_size=2
-)
+# 3) Fitness’i hesapla
+raw_score = fitness(best, G)
 
-print("Best tour length:", length)
-print("Best tour:", best)
+# 4) Çatışma sayısını kontrol et
+conflicts = 0
+for u, nbrs in G.items():
+    for v in nbrs:
+        if best[u] == best[v]:
+            conflicts += 1
+conflicts //= 2  # kenarlar iki kez sayıldı
+
+# 5) Kullanılan renk sayısı
+colors_used = len(set(best))
+
+print(f"Raw fitness: {raw_score}")
+print(f"  -> conflicts: {conflicts}")
+print(f"  -> colors used: {colors_used}")
+print(f"Runtime: {dur:.2f}s")
