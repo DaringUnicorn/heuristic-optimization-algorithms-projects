@@ -115,46 +115,19 @@ def mutate(chrom, max_colors, current_mut_rate):
             chrom[i] = random.randrange(max_colors)
 
 
-def better_local_search(chrom, edges, max_colors):
-    # Try to swap colors between pairs of nodes to reduce the number of colors
-    n = len(chrom)
-    best = chrom[:]
-    best_obj = objective(best)
+def local_search(chrom, edges, max_colors):
     improved = False
-    changed = True
-    while changed:
-        changed = False
-        for i in range(n):
-            for j in range(i+1, n):
-                if best[i] != best[j]:
-                    # Swap colors
-                    best[i], best[j] = best[j], best[i]
-                    if is_valid_coloring(best, edges):
-                        obj = objective(best)
-                        if obj < best_obj:
-                            best_obj = obj
-                            improved = True
-                            changed = True
-                        else:
-                            # Undo swap
-                            best[i], best[j] = best[j], best[i]
-                    else:
-                        # Undo swap
-                        best[i], best[j] = best[j], best[i]
-        # After one full pass, try to decrement colors as before
-        for i in range(n):
-            for c in range(best[i]-1, -1, -1):
-                old = best[i]
-                best[i] = c
-                if all(best[u] != best[v] for u, v in edges):
-                    if objective(best) < best_obj:
-                        best_obj = objective(best)
-                        improved = True
-                        changed = True
-                else:
-                    best[i] = old
-                    break
-    return best if improved else None
+    chrom = chrom[:]
+    for i in range(len(chrom)):
+        for c in range(chrom[i]-1, -1, -1):
+            old = chrom[i]
+            chrom[i] = c
+            if all(chrom[u] != chrom[v] for u, v in edges):
+                improved = True
+            else:
+                chrom[i] = old
+                break
+    return chrom if improved else None
 
 
 def run_ga(n_nodes,
@@ -213,13 +186,13 @@ def run_ga(n_nodes,
         gen_best = min(fitnesses)
         gen_best_ind = population[fitnesses.index(gen_best)][:]
 
-        # Better local search: try swaps and decrements
+        # Simpler local search: only decrements
         improved = False
-        local_best = better_local_search(gen_best_ind, edges, max_colors)
+        local_best = local_search(gen_best_ind, edges, max_colors)
         if local_best is not None:
             local_fit = fitness(local_best, edges, penalty_weight)
             if local_fit < gen_best:
-                print(f"[GA][Gen {gen}] Better local search improved best fitness: {local_fit} (colors: {objective(local_best)})")
+                print(f"[GA][Gen {gen}] Local search improved best fitness: {local_fit} (colors: {objective(local_best)})")
                 gen_best = local_fit
                 gen_best_ind = local_best
                 improved = True
