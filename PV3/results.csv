@@ -1,0 +1,6 @@
+File,Vertices,Edges,DSatur (k),Standard MA (k),Enhanced MA (k)
+gc_100_9.txt,100,4461,45,45,45
+gc_250_9.txt,250,28046,96,96,96
+gc_500_9.txt,500,112224,169,169,169
+gc_50_9.txt,50,1103,23,23,23
+gc_70_9.txt,70,2158,32,32,32
