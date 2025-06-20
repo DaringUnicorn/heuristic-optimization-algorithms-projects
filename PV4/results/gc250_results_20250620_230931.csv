@@ -1,0 +1,5 @@
+Graph_File,Algorithm,Best_Fitness,Best_Conflicts,Best_Colors_Used,Runtime_Seconds,Is_Valid,Population_Size,Generations,Num_Vertices,Num_Edges,Color_Estimation,Notes
+gc_250_9.txt,GA + DSATUR + Tabu Search,92.0,0,92,3.84,Yes,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"BEST PERFORMANCE - 92 colors, fastest algorithm"
+gc_250_9.txt,GA + Adaptive + Repair,94.0,2,92,6.88,No,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"2 conflicts remaining, adaptive mutation rate"
+gc_250_9.txt,Memetic GA (Tabu Search),94.0,2,92,351.46,No,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"Very slow - 351.46s, 2 conflicts remaining"
+gc_250_9.txt,GA + Greedy + Custom Crossover,96.0,0,96,4.83,Yes,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"Valid solution found, balanced performance"

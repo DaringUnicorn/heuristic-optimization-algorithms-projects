@@ -1,0 +1,5 @@
+Graph_File,Algorithm,Best_Fitness,Best_Conflicts,Best_Colors_Used,Runtime_Seconds,Is_Valid,Population_Size,Generations,Num_Vertices,Num_Edges,Color_Estimation,Notes
+gc_70_9.txt,GA + DSATUR + Tabu Search,30.0,0,30,0.47,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"BEST PERFORMANCE - 30 colors, Tabu Search optimization"
+gc_70_9.txt,GA + Adaptive + Repair,32.0,0,32,0.1,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"Fastest algorithm - 0.10s, found in generation 0"
+gc_70_9.txt,Memetic GA (Tabu Search),30.0,0,30,1.23,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"Best performance - 30 colors, local search on each individual"
+gc_70_9.txt,GA + Greedy + Custom Crossover,32.0,0,32,0.23,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),Balanced performance - good speed and quality

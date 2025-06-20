@@ -1,0 +1,17 @@
+Graph_File,Algorithm,Best_Fitness,Best_Conflicts,Best_Colors_Used,Runtime_Seconds,Is_Valid,Population_Size,Generations,Num_Vertices,Num_Edges,Color_Estimation,Notes
+gc_50_9.txt,GA + DSATUR + Tabu Search,24.0,0,24,~30,Yes,50,50,50,662,Fixed (24),"DSATUR initialization, Tabu Search post-processing"
+gc_50_9.txt,GA + Adaptive + Repair,24.0,0,24,~25,Yes,50,50,50,662,Fixed (24),"Found solution in generation 0, adaptive mutation rate"
+gc_50_9.txt,Memetic GA (Tabu Search),23.0,0,23,~45,Yes,50,50,50,662,Fixed (24),"Best performance - 23 colors, local search on each individual"
+gc_50_9.txt,GA + Greedy + Custom Crossover,23.0,0,23,~35,Yes,50,50,50,662,Fixed (24),"Best performance - 23 colors, greedy initialization"
+gc_70_9.txt,GA + DSATUR + Tabu Search,30.0,0,30,0.47,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"BEST PERFORMANCE - 30 colors, Tabu Search optimization"
+gc_70_9.txt,GA + Adaptive + Repair,32.0,0,32,0.1,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"Fastest algorithm - 0.10s, found in generation 0"
+gc_70_9.txt,Memetic GA (Tabu Search),30.0,0,30,1.23,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),"Best performance - 30 colors, local search on each individual"
+gc_70_9.txt,GA + Greedy + Custom Crossover,32.0,0,32,0.23,Yes,30,30,70,2158,Dynamic (Greedy: 32 + 5 buffer),Balanced performance - good speed and quality
+gc_100_9.txt,GA + DSATUR + Tabu Search,40.0,0,43,0.96,Yes,30,30,100,4461,Dynamic (Greedy: 45 + 5 buffer),"BEST PERFORMANCE - 40 colors, Tabu Search optimization"
+gc_100_9.txt,GA + Adaptive + Repair,45.0,0,45,0.24,Yes,30,30,100,4461,Dynamic (Greedy: 45 + 5 buffer),"Fastest algorithm - 0.24s, found in generation 0"
+gc_100_9.txt,Memetic GA (Tabu Search),45.0,0,45,4.45,Yes,30,30,100,4461,Dynamic (Greedy: 45 + 5 buffer),Slowest but thorough - local search on each individual
+gc_100_9.txt,GA + Greedy + Custom Crossover,44.0,0,45,0.67,Yes,30,30,100,4461,Dynamic (Greedy: 45 + 5 buffer),Balanced performance - good speed and quality
+gc_250_9.txt,GA + DSATUR + Tabu Search,92.0,0,92,3.84,Yes,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"BEST PERFORMANCE - 92 colors, fastest algorithm"
+gc_250_9.txt,GA + Adaptive + Repair,94.0,2,92,6.88,No,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"2 conflicts remaining, adaptive mutation rate"
+gc_250_9.txt,Memetic GA (Tabu Search),94.0,2,92,351.46,No,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"Very slow - 351.46s, 2 conflicts remaining"
+gc_250_9.txt,GA + Greedy + Custom Crossover,96.0,0,96,4.83,Yes,20,20,251,28046,Dynamic (Greedy: 96 + 5 buffer),"Valid solution found, balanced performance"

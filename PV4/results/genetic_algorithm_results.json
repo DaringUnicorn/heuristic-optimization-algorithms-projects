@@ -1,0 +1,183 @@
+{
+  "24colors_random": {
+    "best_fitness": 1073,
+    "best_conflicts": 21,
+    "best_colors_used": 23,
+    "valid_solution": false,
+    "num_colors": 24,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "24colors_dsatur": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 24,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "24colors_greedy": {
+    "best_fitness": 373,
+    "best_conflicts": 7,
+    "best_colors_used": 23,
+    "valid_solution": false,
+    "num_colors": 24,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "24colors_mixed": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 24,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "25colors_random": {
+    "best_fitness": 924,
+    "best_conflicts": 18,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 25,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "25colors_dsatur": {
+    "best_fitness": 74,
+    "best_conflicts": 1,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 25,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "25colors_greedy": {
+    "best_fitness": 125,
+    "best_conflicts": 2,
+    "best_colors_used": 25,
+    "valid_solution": false,
+    "num_colors": 25,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "25colors_mixed": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 25,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "26colors_random": {
+    "best_fitness": 826,
+    "best_conflicts": 16,
+    "best_colors_used": 26,
+    "valid_solution": false,
+    "num_colors": 26,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "26colors_dsatur": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 26,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "26colors_greedy": {
+    "best_fitness": 125,
+    "best_conflicts": 2,
+    "best_colors_used": 25,
+    "valid_solution": false,
+    "num_colors": 26,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "26colors_mixed": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 26,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "27colors_random": {
+    "best_fitness": 675,
+    "best_conflicts": 13,
+    "best_colors_used": 25,
+    "valid_solution": false,
+    "num_colors": 27,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "27colors_dsatur": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 27,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "27colors_greedy": {
+    "best_fitness": 126,
+    "best_conflicts": 2,
+    "best_colors_used": 26,
+    "valid_solution": false,
+    "num_colors": 27,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "27colors_mixed": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 27,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "28colors_random": {
+    "best_fitness": 726,
+    "best_conflicts": 14,
+    "best_colors_used": 26,
+    "valid_solution": false,
+    "num_colors": 28,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "28colors_dsatur": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 28,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "28colors_greedy": {
+    "best_fitness": 126,
+    "best_conflicts": 2,
+    "best_colors_used": 26,
+    "valid_solution": false,
+    "num_colors": 28,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "28colors_mixed": {
+    "best_fitness": 124,
+    "best_conflicts": 2,
+    "best_colors_used": 24,
+    "valid_solution": false,
+    "num_colors": 28,
+    "vertices": 50,
+    "edges": 1103
+  },
+  "timestamp": "2025-06-20T20:11:17.138653"
+}

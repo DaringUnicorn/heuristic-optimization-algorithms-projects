@@ -1,0 +1,9 @@
+{
+  "dsatur_colors": 24,
+  "dsatur_conflicts": 2,
+  "greedy_colors": 26,
+  "greedy_conflicts": 2,
+  "vertices": 50,
+  "edges": 1103,
+  "timestamp": "2025-06-20T20:10:45.028856"
+}

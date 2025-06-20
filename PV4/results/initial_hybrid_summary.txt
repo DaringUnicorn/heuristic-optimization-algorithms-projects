@@ -1,0 +1,32 @@
+HYBRID GENETIC ALGORITHMS FOR GRAPH COLORING
+==================================================
+
+Test Date: 2025-06-20 22:34:27
+Graph File: gc_50_9.txt (50 vertices, 662 edges)
+
+RESULTS SUMMARY:
+--------------------
+
+GA + DSATUR + Tabu Search:
+  • Conflicts: 0
+  • Colors Used: 24
+  • Valid Solution: Yes
+  • Runtime: ~30
+  • Notes: DSATUR initialization, Tabu Search post-processing
+
+GA + Adaptive + Repair:
+  • Conflicts: 0
+  • Colors Used: 24
+  • Valid Solution: Yes
+  • Runtime: ~25
+  • Notes: Found solution in generation 0, adaptive mutation rate
+
+Memetic GA (Tabu Search):
+  • Conflicts: 0
+  • Colors Used: 23
+  • Valid Solution: Yes
+  • Runtime: ~45
+  • Notes: Best performance - 23 colors, local search on each individual
+
+🏆 BEST PERFORMANCE: Memetic GA (23 colors)
+   All algorithms found valid solutions!

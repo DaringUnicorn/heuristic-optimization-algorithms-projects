@@ -1,0 +1,4 @@
+Graph_File,Algorithm,Best_Fitness,Best_Conflicts,Best_Colors_Used,Runtime_Seconds,Is_Valid,Population_Size,Generations,Num_Vertices,Num_Edges,Notes
+gc_50_9.txt,GA + DSATUR + Tabu Search,24.0,0,24,~30,Yes,50,50,50,662,"DSATUR initialization, Tabu Search post-processing"
+gc_50_9.txt,GA + Adaptive + Repair,24.0,0,24,~25,Yes,50,50,50,662,"Found solution in generation 0, adaptive mutation rate"
+gc_50_9.txt,Memetic GA (Tabu Search),23.0,0,23,~45,Yes,50,50,50,662,"Best performance - 23 colors, local search on each individual"
