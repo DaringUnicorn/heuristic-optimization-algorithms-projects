@@ -348,19 +348,5 @@ def main():
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writerow(row)
 
-    # plot convergence
-    plt.figure()
-    plt.plot(history)
-    plt.xlabel('Generation')
-    plt.ylabel('Best Fitness (penalized)')
-    plt.title('GA Convergence with Adaptive Mutation')
-    plt.grid(True)
-    plt.tight_layout()
-    if args.save_plot:
-        plt.savefig(args.save_plot)
-        print(f"Plot saved to {args.save_plot}")
-    else:
-        plt.show()
-
 if __name__ == "__main__":
     main()
